@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * direction.<br>
  * This class will only work with two independently controlled motors to steer
  * differentially, so it can rotate within its own footprint (i.e. turn on one
- * spot). It registers as a {@link lejos.robotics.RegulatedMotorListener} with
+ * spot). It registers as a {@link RegulatedMotorListener} with
  * each of its motors. An object of this class assumes that it has exclusive
  * control of its motors. If any other object makes calls to its motors, the
  * results are unpredictable. <br>
@@ -60,9 +60,7 @@ import java.util.ArrayList;
  * DifferentialPilot.setMinRadius() and setting the value to something greater
  * than zero (perhaps 15 cm).
  * </p>
- * @deprecated use {@link MovePilot} instead. 
  **/
-@Deprecated 
 public class DifferentialPilot implements  LineFollowingMoveController {
 	/**
 	 * Allocates a DifferentialPilot object, and sets the physical parameters of
