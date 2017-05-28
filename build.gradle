@@ -1,5 +1,9 @@
 
+version = '0.1.0-SNAPSHOT'
+
 apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
 
 repositories {
     mavenCentral()
@@ -9,8 +13,47 @@ repositories {
 dependencies {
     compile("org.projectlombok:lombok:1.16.16")
     compile("org.slf4j:slf4j-api:1.7.25")
-    compile("com.github.ev3dev-lang-java:lejos-commons:v0.5.6-SNAPSHOT")
+    compile("com.github.ev3dev-lang-java:lejos-commons:v0.5.7-SNAPSHOT")
 
-    compile("com.github.ev3dev-lang-java:ev3dev-lang-java:v0.6.5-SNAPSHOT")
+    compile("com.github.ev3dev-lang-java:ev3dev-lang-java:v0.6.13-SNAPSHOT")
+    compile("ch.qos.logback:logback-classic:1.2.3")
+
 }
+
+//Compile
+compileJava {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+}
+
+//Jar
+jar {
+    baseName = "${rootProject.name}"
+}
+
+//Fat Jar
+task fatJar(type: Jar) {
+    baseName = "${rootProject.name}" + "-all"
+    manifest {
+        from file("${projectDir}/src/main/resources/META-INF/MANIFEST.MF")
+    }
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+//Deploy on Brick
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "org.hidetake:gradle-ssh-plugin:2.0.0"
+    }
+}
+apply plugin: 'org.hidetake.ssh'
+
+apply from: 'deploy.gradle'
+
 
