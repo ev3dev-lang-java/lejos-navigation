@@ -15,7 +15,7 @@ dependencies {
     compile("org.slf4j:slf4j-api:1.7.25")
     compile("com.github.ev3dev-lang-java:lejos-commons:v0.5.7-SNAPSHOT")
 
-    compile("com.github.ev3dev-lang-java:ev3dev-lang-java:v0.6.13-SNAPSHOT")
+    compile("com.github.ev3dev-lang-java:ev3dev-lang-java:v0.6.16-SNAPSHOT")
     compile("ch.qos.logback:logback-classic:1.2.3")
 
 }
