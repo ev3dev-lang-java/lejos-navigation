@@ -9,7 +9,6 @@ import lejos.robotics.localization.CompassPoseProvider;
 import lejos.robotics.localization.OdometryPoseProvider;
 import lejos.robotics.navigation.DifferentialPilot;
 import lejos.robotics.navigation.Navigator;
-import lejos.robotics.navigation.Pose;
 import lejos.robotics.navigation.Waypoint;
 import lejos.robotics.pathfinding.Path;
 import lombok.extern.slf4j.Slf4j;
@@ -26,8 +25,10 @@ public @Slf4j class DifferentialPilotTest8 {
         OdometryPoseProvider pp = new OdometryPoseProvider(pilot);
         Navigator navigator = new Navigator(pilot, pp);
 
-        navigator.goTo(20,0);
-        navigator.goTo(20,20);
+        navigator.goTo(30,0);
+        navigator.goTo(30,30);
+        navigator.goTo(0,0,0);
+        //navigator.goTo(0,0,0);
         navigator.followPath();
         navigator.waitForStop();
 
