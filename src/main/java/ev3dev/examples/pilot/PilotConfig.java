@@ -1,4 +1,4 @@
-package ev3dev.examples;
+package ev3dev.examples.pilot;
 
 import ev3dev.utils.PilotProps;
 import lejos.robotics.RegulatedMotor;
@@ -31,6 +31,8 @@ public class PilotConfig {
         pilot.setAngularSpeed(100);
         //pilot.setLinearAcceleration();
         pilot.setLinearSpeed(100);
+        int accel = 60;
+        //pilot.setAcceleration(accel);
     }
 
     public DifferentialPilot getPilot(){

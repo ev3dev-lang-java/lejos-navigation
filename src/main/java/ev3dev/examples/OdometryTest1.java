@@ -1,4 +1,4 @@
-package ev3dev.examples.failed;
+package ev3dev.examples;
 
 import ev3dev.actuators.ev3.motors.EV3LargeRegulatedMotor;
 import ev3dev.sensors.Battery;
@@ -45,7 +45,7 @@ public @Slf4j class OdometryTest1 {
 
     //pilot.rotate(90);
     pilot.travel(10);
-    pilot.arc(30, 90);
+    pilot.arc(30, 30);
     //pilot.travel(50);
     
     log.info("End: {}", odometry.getPose());

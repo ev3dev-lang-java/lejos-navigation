@@ -1,4 +1,4 @@
-package ev3dev.examples.advanced;
+package ev3dev.examples.pilot;
 
 import ev3dev.actuators.ev3.motors.Motor;
 import lejos.robotics.RegulatedMotor;

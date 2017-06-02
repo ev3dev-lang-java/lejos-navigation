@@ -1,14 +1,21 @@
-package ev3dev.examples;
+package ev3dev.examples.pilot;
 
+import ev3dev.actuators.ev3.motors.Motor;
 import ev3dev.sensors.Battery;
+import ev3dev.sensors.ev3.EV3GyroSensor;
+import lejos.hardware.port.SensorPort;
+import lejos.robotics.DirectionFinderAdapter;
+import lejos.robotics.localization.CompassPoseProvider;
 import lejos.robotics.localization.OdometryPoseProvider;
 import lejos.robotics.navigation.DifferentialPilot;
 import lejos.robotics.navigation.Navigator;
+import lejos.robotics.navigation.Waypoint;
+import lejos.robotics.pathfinding.Path;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
 
-public @Slf4j class DifferentialPilotTest5 {
+public @Slf4j class DifferentialPilotTest8 {
 
     public static void main(final String[] args) throws IOException {
 
@@ -18,16 +25,19 @@ public @Slf4j class DifferentialPilotTest5 {
         OdometryPoseProvider pp = new OdometryPoseProvider(pilot);
         Navigator navigator = new Navigator(pilot, pp);
 
-        navigator.singleStep(true);
-
-        navigator.addWaypoint(0.0f, 40.0f, 0.0f);
-        //navigator.addWaypoint(0.0f, 80.0f);
-        //navigator.addWaypoint(-80.0f, 00.0f, 90.0f);
-
+        navigator.goTo(0,0);
+        navigator.goTo(100,0);
+        navigator.goTo(50,50);
+        navigator.goTo(100,-50);
         navigator.followPath();
         navigator.waitForStop();
+
+        System.out.println(pp.getPose().getHeading());
+        System.out.println(pp.getPose().getX());
+        System.out.println(pp.getPose().getY());
 
         log.info("Voltage: {}", Battery.getInstance().getVoltage());
 
     }
+
 }

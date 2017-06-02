@@ -1,4 +1,4 @@
-package ev3dev.examples;
+package ev3dev.examples.advanced;
 
 import ev3dev.actuators.ev3.motors.Motor;
 import ev3dev.sensors.Battery;

@@ -1,4 +1,4 @@
-package ev3dev.examples;
+package ev3dev.examples.pilot;
 
 import ev3dev.sensors.Battery;
 import lejos.robotics.navigation.DifferentialPilot;

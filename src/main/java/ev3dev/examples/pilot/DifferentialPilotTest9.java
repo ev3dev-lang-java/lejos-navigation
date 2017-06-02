@@ -1,4 +1,4 @@
-package ev3dev.examples;
+package ev3dev.examples.pilot;
 
 import ev3dev.actuators.ev3.motors.Motor;
 import ev3dev.sensors.Battery;
@@ -10,7 +10,7 @@ import lejos.robotics.navigation.Pose;
 import lejos.utility.Delay;
 import lombok.extern.slf4j.Slf4j;
 
-public @Slf4j class PilotSquare {
+public @Slf4j class DifferentialPilotTest9 {
 
 
    public static void main(String [] args) throws Exception {

@@ -25,7 +25,7 @@ import lejos.robotics.pathfinding.ShortestPathFinder;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Gartom implements FeatureListener {
+public class FeatureDetectionTest1 implements FeatureListener {
 
     static NXTRegulatedMotor m1 = new NXTRegulatedMotor(MotorPort.A),
 			m2 = new NXTRegulatedMotor(MotorPort.C);
@@ -33,8 +33,8 @@ public class Gartom implements FeatureListener {
 			m2, m1);
 	static final OdometryPoseProvider PP = new OdometryPoseProvider(pilot);
 	static final Navigator n = new Navigator(pilot, PP);
-	//static final TouchFeatureDetector tfd = new TouchFeatureDetector(
-	//		new EV3TouchSensor(SensorPort.S4), 0, 12.0);
+	static final TouchFeatureDetector tfd = new TouchFeatureDetector(
+			new EV3TouchSensor(SensorPort.S4), 0, 12.0);
 	static final ArrayList<Line> lines = new ArrayList<Line>();
 
 	static final ShortestPathFinder path = new ShortestPathFinder(new LineMap(new Line[0], new Rectangle(-1000, -1000, 2000, 2000)));
@@ -42,7 +42,7 @@ public class Gartom implements FeatureListener {
 	public static void main(String[] args) {
 
 
-        new Gartom().go();
+        new FeatureDetectionTest1().go();
 
     }
 

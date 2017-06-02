@@ -1,5 +1,6 @@
 package ev3dev.examples.advanced;
 
+import ev3dev.examples.pilot.PilotConfiguration;
 import lejos.robotics.navigation.DestinationUnreachableException;
 
 public class Main2 {

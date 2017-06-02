@@ -1,4 +1,4 @@
-package ev3dev.examples.failed;
+package ev3dev.examples;
 
 import ev3dev.actuators.ev3.motors.EV3LargeRegulatedMotor;
 import ev3dev.actuators.ev3.motors.Motor;
