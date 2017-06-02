@@ -430,8 +430,58 @@ digraph G {
 <tr><td align="center" balign="center"> ArcRotateMoveController </td></tr>
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// lejos.robotics.navigation.CompassPilot
+	c18 [label=<<table title="lejos.robotics.navigation.CompassPilot" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> CompassPilot </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left"> # compass : DirectionFinder </td></tr>
+<tr><td align="left" balign="left"> # regulator : CompassPilot.Regulator </td></tr>
+<tr><td align="left" balign="left"> # _heading : float </td></tr>
+<tr><td align="left" balign="left"> # _estimatedHeading : float </td></tr>
+<tr><td align="left" balign="left"> # _traveling : boolean </td></tr>
+<tr><td align="left" balign="left"> # _distance : float </td></tr>
+<tr><td align="left" balign="left"> # _direction : byte </td></tr>
+<tr><td align="left" balign="left"> # _heading0 : float </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left"> + CompassPilot(compass : DirectionFinder, wheelDiameter : float, trackWidth : float, leftMotor : RegulatedMotor, rightMotor : RegulatedMotor) </td></tr>
+<tr><td align="left" balign="left"> + CompassPilot(compass : DirectionFinder, wheelDiameter : float, trackWidth : float, leftMotor : RegulatedMotor, rightMotor : RegulatedMotor, reverse : boolean) </td></tr>
+<tr><td align="left" balign="left"> + isTraveling() : boolean </td></tr>
+<tr><td align="left" balign="left"> + getCompass() : DirectionFinder </td></tr>
+<tr><td align="left" balign="left"> + getAngleIncrement() : float </td></tr>
+<tr><td align="left" balign="left"> + getHeading() : float </td></tr>
+<tr><td align="left" balign="left"> + getCompassHeading() : float </td></tr>
+<tr><td align="left" balign="left"> + setHeading(angle : float) </td></tr>
+<tr><td align="left" balign="left"> + calibrate() </td></tr>
+<tr><td align="left" balign="left"> + resetCartesianZero() </td></tr>
+<tr><td align="left" balign="left"> + getHeadingError() : float </td></tr>
+<tr><td align="left" balign="left"> + travel(distance : float, immediateReturn : boolean) </td></tr>
+<tr><td align="left" balign="left"> + travel(distance : float) </td></tr>
+<tr><td align="left" balign="left"> + rotate(angle : float, immediateReturn : boolean) </td></tr>
+<tr><td align="left" balign="left"> + rotate(angle : float) </td></tr>
+<tr><td align="left" balign="left"> + reset() </td></tr>
+<tr><td align="left" balign="left"> # stopNow() </td></tr>
+<tr><td align="left" balign="left"> + stop() </td></tr>
+<tr><td align="left" balign="left"> # normalize(angle : float) : float </td></tr>
+		</table></td></tr>
+		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// lejos.robotics.navigation.CompassPilot.Regulator
+	c19 [label=<<table title="lejos.robotics.navigation.CompassPilot.Regulator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> Regulator </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left">  </td></tr>
+		</table></td></tr>
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="left" balign="left"> ~ Regulator() </td></tr>
+<tr><td align="left" balign="left"> + run() </td></tr>
+		</table></td></tr>
+		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.navigation.DestinationUnreachableException
-	c18 [label=<<table title="lejos.robotics.navigation.DestinationUnreachableException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c20 [label=<<table title="lejos.robotics.navigation.DestinationUnreachableException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DestinationUnreachableException </td></tr>
 		</table></td></tr>
@@ -443,7 +493,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.navigation.DifferentialPilot
-	c19 [label=<<table title="lejos.robotics.navigation.DifferentialPilot" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c21 [label=<<table title="lejos.robotics.navigation.DifferentialPilot" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DifferentialPilot </td></tr>
 		</table></td></tr>
@@ -539,7 +589,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.navigation.DifferentialPilot.Monitor
-	c20 [label=<<table title="lejos.robotics.navigation.DifferentialPilot.Monitor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c22 [label=<<table title="lejos.robotics.navigation.DifferentialPilot.Monitor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Monitor </td></tr>
 		</table></td></tr>
@@ -552,7 +602,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.navigation.LineFollowingMoveController
-	c21 [label=<<table title="lejos.robotics.navigation.LineFollowingMoveController" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c23 [label=<<table title="lejos.robotics.navigation.LineFollowingMoveController" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> LineFollowingMoveController </td></tr>
@@ -566,7 +616,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.navigation.Move
-	c22 [label=<<table title="lejos.robotics.navigation.Move" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c24 [label=<<table title="lejos.robotics.navigation.Move" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Move </td></tr>
 		</table></td></tr>
@@ -604,7 +654,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.navigation.Move.MoveType
-	c23 [label=<<table title="lejos.robotics.navigation.Move.MoveType" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c25 [label=<<table title="lejos.robotics.navigation.Move.MoveType" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;enumeration&#187; </td></tr>
 <tr><td align="center" balign="center"> MoveType </td></tr>
@@ -620,7 +670,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.navigation.MoveController
-	c24 [label=<<table title="lejos.robotics.navigation.MoveController" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c26 [label=<<table title="lejos.robotics.navigation.MoveController" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> MoveController </td></tr>
@@ -646,7 +696,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.navigation.MoveListener
-	c25 [label=<<table title="lejos.robotics.navigation.MoveListener" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c27 [label=<<table title="lejos.robotics.navigation.MoveListener" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> MoveListener </td></tr>
@@ -660,7 +710,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.navigation.MoveProvider
-	c26 [label=<<table title="lejos.robotics.navigation.MoveProvider" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c28 [label=<<table title="lejos.robotics.navigation.MoveProvider" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> MoveProvider </td></tr>
@@ -674,7 +724,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.navigation.NavigationListener
-	c27 [label=<<table title="lejos.robotics.navigation.NavigationListener" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c29 [label=<<table title="lejos.robotics.navigation.NavigationListener" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> NavigationListener </td></tr>
@@ -689,7 +739,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.navigation.Navigator
-	c28 [label=<<table title="lejos.robotics.navigation.Navigator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c30 [label=<<table title="lejos.robotics.navigation.Navigator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Navigator </td></tr>
 		</table></td></tr>
@@ -737,7 +787,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.navigation.Navigator.Nav
-	c29 [label=<<table title="lejos.robotics.navigation.Navigator.Nav" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c31 [label=<<table title="lejos.robotics.navigation.Navigator.Nav" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Nav </td></tr>
 		</table></td></tr>
@@ -750,7 +800,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.navigation.Pose
-	c30 [label=<<table title="lejos.robotics.navigation.Pose" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c32 [label=<<table title="lejos.robotics.navigation.Pose" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Pose </td></tr>
 		</table></td></tr>
@@ -783,7 +833,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.navigation.RotateMoveController
-	c31 [label=<<table title="lejos.robotics.navigation.RotateMoveController" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c33 [label=<<table title="lejos.robotics.navigation.RotateMoveController" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> RotateMoveController </td></tr>
@@ -804,7 +854,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.navigation.Waypoint
-	c32 [label=<<table title="lejos.robotics.navigation.Waypoint" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c34 [label=<<table title="lejos.robotics.navigation.Waypoint" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Waypoint </td></tr>
 		</table></td></tr>
@@ -831,7 +881,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.navigation.WaypointListener
-	c33 [label=<<table title="lejos.robotics.navigation.WaypointListener" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c35 [label=<<table title="lejos.robotics.navigation.WaypointListener" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> WaypointListener </td></tr>
@@ -845,7 +895,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.objectdetection.Feature
-	c34 [label=<<table title="lejos.robotics.objectdetection.Feature" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c36 [label=<<table title="lejos.robotics.objectdetection.Feature" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Feature </td></tr>
@@ -860,7 +910,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.objectdetection.FeatureDetector
-	c35 [label=<<table title="lejos.robotics.objectdetection.FeatureDetector" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c37 [label=<<table title="lejos.robotics.objectdetection.FeatureDetector" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> FeatureDetector </td></tr>
@@ -878,7 +928,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.objectdetection.FeatureDetectorAdapter
-	c36 [label=<<table title="lejos.robotics.objectdetection.FeatureDetectorAdapter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c38 [label=<<table title="lejos.robotics.objectdetection.FeatureDetectorAdapter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> FeatureDetectorAdapter </font></td></tr>
 		</table></td></tr>
@@ -899,7 +949,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.objectdetection.FeatureDetectorAdapter.MonitorThread
-	c37 [label=<<table title="lejos.robotics.objectdetection.FeatureDetectorAdapter.MonitorThread" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c39 [label=<<table title="lejos.robotics.objectdetection.FeatureDetectorAdapter.MonitorThread" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> MonitorThread </td></tr>
 		</table></td></tr>
@@ -912,7 +962,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.objectdetection.FeatureListener
-	c38 [label=<<table title="lejos.robotics.objectdetection.FeatureListener" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c40 [label=<<table title="lejos.robotics.objectdetection.FeatureListener" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> FeatureListener </td></tr>
@@ -925,7 +975,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.objectdetection.FusorDetector
-	c39 [label=<<table title="lejos.robotics.objectdetection.FusorDetector" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c41 [label=<<table title="lejos.robotics.objectdetection.FusorDetector" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> FusorDetector </td></tr>
 		</table></td></tr>
@@ -950,7 +1000,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.objectdetection.FusorDetector.NotifyThread
-	c40 [label=<<table title="lejos.robotics.objectdetection.FusorDetector.NotifyThread" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c42 [label=<<table title="lejos.robotics.objectdetection.FusorDetector.NotifyThread" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> NotifyThread </td></tr>
 		</table></td></tr>
@@ -963,7 +1013,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.objectdetection.RangeFeature
-	c41 [label=<<table title="lejos.robotics.objectdetection.RangeFeature" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c43 [label=<<table title="lejos.robotics.objectdetection.RangeFeature" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> RangeFeature </td></tr>
 		</table></td></tr>
@@ -986,7 +1036,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.objectdetection.RangeFeatureDetector
-	c42 [label=<<table title="lejos.robotics.objectdetection.RangeFeatureDetector" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c44 [label=<<table title="lejos.robotics.objectdetection.RangeFeatureDetector" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> RangeFeatureDetector </td></tr>
 		</table></td></tr>
@@ -1006,7 +1056,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.objectdetection.TouchFeatureDetector
-	c43 [label=<<table title="lejos.robotics.objectdetection.TouchFeatureDetector" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c45 [label=<<table title="lejos.robotics.objectdetection.TouchFeatureDetector" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> TouchFeatureDetector </td></tr>
 		</table></td></tr>
@@ -1025,7 +1075,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.pathfinding.AstarSearchAlgorithm
-	c44 [label=<<table title="lejos.robotics.pathfinding.AstarSearchAlgorithm" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c46 [label=<<table title="lejos.robotics.pathfinding.AstarSearchAlgorithm" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> AstarSearchAlgorithm </td></tr>
 		</table></td></tr>
@@ -1043,7 +1093,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.pathfinding.DijkstraPathFinder
-	c45 [label=<<table title="lejos.robotics.pathfinding.DijkstraPathFinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c47 [label=<<table title="lejos.robotics.pathfinding.DijkstraPathFinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DijkstraPathFinder </td></tr>
 		</table></td></tr>
@@ -1078,7 +1128,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.pathfinding.DijkstraPathFinder.Node
-	c46 [label=<<table title="lejos.robotics.pathfinding.DijkstraPathFinder.Node" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c48 [label=<<table title="lejos.robotics.pathfinding.DijkstraPathFinder.Node" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Node </td></tr>
 		</table></td></tr>
@@ -1106,7 +1156,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.pathfinding.FourWayGridMesh
-	c47 [label=<<table title="lejos.robotics.pathfinding.FourWayGridMesh" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c49 [label=<<table title="lejos.robotics.pathfinding.FourWayGridMesh" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> FourWayGridMesh </td></tr>
 		</table></td></tr>
@@ -1130,7 +1180,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.pathfinding.GridNode
-	c48 [label=<<table title="lejos.robotics.pathfinding.GridNode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c50 [label=<<table title="lejos.robotics.pathfinding.GridNode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> GridNode </td></tr>
 		</table></td></tr>
@@ -1144,7 +1194,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.pathfinding.NavigationMesh
-	c49 [label=<<table title="lejos.robotics.pathfinding.NavigationMesh" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c51 [label=<<table title="lejos.robotics.pathfinding.NavigationMesh" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> NavigationMesh </td></tr>
@@ -1162,7 +1212,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.pathfinding.Node
-	c50 [label=<<table title="lejos.robotics.pathfinding.Node" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c52 [label=<<table title="lejos.robotics.pathfinding.Node" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Node </td></tr>
 		</table></td></tr>
@@ -1192,7 +1242,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.pathfinding.NodePathFinder
-	c51 [label=<<table title="lejos.robotics.pathfinding.NodePathFinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c53 [label=<<table title="lejos.robotics.pathfinding.NodePathFinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> NodePathFinder </td></tr>
 		</table></td></tr>
@@ -1212,7 +1262,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.pathfinding.Path
-	c52 [label=<<table title="lejos.robotics.pathfinding.Path" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c54 [label=<<table title="lejos.robotics.pathfinding.Path" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Path </td></tr>
 		</table></td></tr>
@@ -1226,7 +1276,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.pathfinding.PathFinder
-	c53 [label=<<table title="lejos.robotics.pathfinding.PathFinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c55 [label=<<table title="lejos.robotics.pathfinding.PathFinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> PathFinder </td></tr>
@@ -1241,7 +1291,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.pathfinding.RandomPathFinder
-	c54 [label=<<table title="lejos.robotics.pathfinding.RandomPathFinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c56 [label=<<table title="lejos.robotics.pathfinding.RandomPathFinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> RandomPathFinder </td></tr>
 		</table></td></tr>
@@ -1269,7 +1319,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.pathfinding.RandomSelfGeneratingNode
-	c55 [label=<<table title="lejos.robotics.pathfinding.RandomSelfGeneratingNode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c57 [label=<<table title="lejos.robotics.pathfinding.RandomSelfGeneratingNode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> RandomSelfGeneratingNode </td></tr>
 		</table></td></tr>
@@ -1286,7 +1336,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.pathfinding.SearchAlgorithm
-	c56 [label=<<table title="lejos.robotics.pathfinding.SearchAlgorithm" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c58 [label=<<table title="lejos.robotics.pathfinding.SearchAlgorithm" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> SearchAlgorithm </td></tr>
@@ -1299,7 +1349,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.pathfinding.ShortestPathFinder
-	c57 [label=<<table title="lejos.robotics.pathfinding.ShortestPathFinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c59 [label=<<table title="lejos.robotics.pathfinding.ShortestPathFinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ShortestPathFinder </td></tr>
 		</table></td></tr>
@@ -1336,7 +1386,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// lejos.robotics.pathfinding.ShortestPathFinder.Node
-	c58 [label=<<table title="lejos.robotics.pathfinding.ShortestPathFinder.Node" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c60 [label=<<table title="lejos.robotics.pathfinding.ShortestPathFinder.Node" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Node </td></tr>
 		</table></td></tr>
@@ -1367,81 +1417,85 @@ digraph G {
 	//lejos.robotics.localization.BeaconPoseProvider implements lejos.robotics.localization.PoseProvider
 	c9:p -> c1:p [dir=back,arrowtail=empty,style=dashed];
 	//lejos.robotics.localization.BeaconPoseProvider implements lejos.robotics.navigation.MoveListener
-	c25:p -> c1:p [dir=back,arrowtail=empty,style=dashed];
+	c27:p -> c1:p [dir=back,arrowtail=empty,style=dashed];
 	//lejos.robotics.localization.CompassPoseProvider extends lejos.robotics.localization.OdometryPoseProvider
 	c8:p -> c3:p [dir=back,arrowtail=empty];
 	//lejos.robotics.localization.MCLPoseProvider implements lejos.robotics.localization.PoseProvider
 	c9:p -> c6:p [dir=back,arrowtail=empty,style=dashed];
 	//lejos.robotics.localization.MCLPoseProvider implements lejos.robotics.navigation.MoveListener
-	c25:p -> c6:p [dir=back,arrowtail=empty,style=dashed];
+	c27:p -> c6:p [dir=back,arrowtail=empty,style=dashed];
 	//lejos.robotics.localization.MCLPoseProvider.Updater extends java.lang.Thread
-	c59:p -> c7:p [dir=back,arrowtail=empty];
+	c61:p -> c7:p [dir=back,arrowtail=empty];
 	//lejos.robotics.localization.OdometryPoseProvider implements lejos.robotics.localization.PoseProvider
 	c9:p -> c8:p [dir=back,arrowtail=empty,style=dashed];
 	//lejos.robotics.localization.OdometryPoseProvider implements lejos.robotics.navigation.MoveListener
-	c25:p -> c8:p [dir=back,arrowtail=empty,style=dashed];
+	c27:p -> c8:p [dir=back,arrowtail=empty,style=dashed];
 	//lejos.robotics.mapping.LineMap implements lejos.robotics.mapping.RangeMap
 	c12:p -> c10:p [dir=back,arrowtail=empty,style=dashed];
 	//lejos.robotics.navigation.ArcMoveController implements lejos.robotics.navigation.MoveController
-	c24:p -> c16:p [dir=back,arrowtail=empty,style=dashed];
+	c26:p -> c16:p [dir=back,arrowtail=empty,style=dashed];
 	//lejos.robotics.navigation.ArcRotateMoveController implements lejos.robotics.navigation.ArcMoveController
 	c16:p -> c17:p [dir=back,arrowtail=empty,style=dashed];
 	//lejos.robotics.navigation.ArcRotateMoveController implements lejos.robotics.navigation.RotateMoveController
-	c31:p -> c17:p [dir=back,arrowtail=empty,style=dashed];
+	c33:p -> c17:p [dir=back,arrowtail=empty,style=dashed];
+	//lejos.robotics.navigation.CompassPilot extends lejos.robotics.navigation.DifferentialPilot
+	c21:p -> c18:p [dir=back,arrowtail=empty];
+	//lejos.robotics.navigation.CompassPilot.Regulator extends java.lang.Thread
+	c61:p -> c19:p [dir=back,arrowtail=empty];
 	//lejos.robotics.navigation.DestinationUnreachableException extends java.lang.Exception
-	c60:p -> c18:p [dir=back,arrowtail=empty];
+	c62:p -> c20:p [dir=back,arrowtail=empty];
 	//lejos.robotics.navigation.DifferentialPilot implements lejos.robotics.navigation.LineFollowingMoveController
-	c21:p -> c19:p [dir=back,arrowtail=empty,style=dashed];
+	c23:p -> c21:p [dir=back,arrowtail=empty,style=dashed];
 	//lejos.robotics.navigation.DifferentialPilot.Monitor extends java.lang.Thread
-	c59:p -> c20:p [dir=back,arrowtail=empty];
+	c61:p -> c22:p [dir=back,arrowtail=empty];
 	//lejos.robotics.navigation.LineFollowingMoveController implements lejos.robotics.navigation.ArcRotateMoveController
-	c17:p -> c21:p [dir=back,arrowtail=empty,style=dashed];
+	c17:p -> c23:p [dir=back,arrowtail=empty,style=dashed];
 	//lejos.robotics.navigation.MoveController implements lejos.robotics.navigation.MoveProvider
-	c26:p -> c24:p [dir=back,arrowtail=empty,style=dashed];
+	c28:p -> c26:p [dir=back,arrowtail=empty,style=dashed];
 	//lejos.robotics.navigation.Navigator implements lejos.robotics.navigation.WaypointListener
-	c33:p -> c28:p [dir=back,arrowtail=empty,style=dashed];
+	c35:p -> c30:p [dir=back,arrowtail=empty,style=dashed];
 	//lejos.robotics.navigation.Navigator.Nav extends java.lang.Thread
-	c59:p -> c29:p [dir=back,arrowtail=empty];
+	c61:p -> c31:p [dir=back,arrowtail=empty];
 	//lejos.robotics.navigation.RotateMoveController implements lejos.robotics.navigation.MoveController
-	c24:p -> c31:p [dir=back,arrowtail=empty,style=dashed];
+	c26:p -> c33:p [dir=back,arrowtail=empty,style=dashed];
 	//lejos.robotics.navigation.Waypoint extends Point
-	c61:p -> c32:p [dir=back,arrowtail=empty];
+	c63:p -> c34:p [dir=back,arrowtail=empty];
 	//lejos.robotics.objectdetection.FeatureDetectorAdapter implements lejos.robotics.objectdetection.FeatureDetector
-	c35:p -> c36:p [dir=back,arrowtail=empty,style=dashed];
+	c37:p -> c38:p [dir=back,arrowtail=empty,style=dashed];
 	//lejos.robotics.objectdetection.FeatureDetectorAdapter.MonitorThread extends java.lang.Thread
-	c59:p -> c37:p [dir=back,arrowtail=empty];
+	c61:p -> c39:p [dir=back,arrowtail=empty];
 	//lejos.robotics.objectdetection.FusorDetector implements lejos.robotics.objectdetection.FeatureDetector
-	c35:p -> c39:p [dir=back,arrowtail=empty,style=dashed];
+	c37:p -> c41:p [dir=back,arrowtail=empty,style=dashed];
 	//lejos.robotics.objectdetection.FusorDetector implements lejos.robotics.objectdetection.FeatureListener
-	c38:p -> c39:p [dir=back,arrowtail=empty,style=dashed];
+	c40:p -> c41:p [dir=back,arrowtail=empty,style=dashed];
 	//lejos.robotics.objectdetection.FusorDetector.NotifyThread extends java.lang.Thread
-	c59:p -> c40:p [dir=back,arrowtail=empty];
+	c61:p -> c42:p [dir=back,arrowtail=empty];
 	//lejos.robotics.objectdetection.RangeFeature implements lejos.robotics.objectdetection.Feature
-	c34:p -> c41:p [dir=back,arrowtail=empty,style=dashed];
+	c36:p -> c43:p [dir=back,arrowtail=empty,style=dashed];
 	//lejos.robotics.objectdetection.RangeFeatureDetector extends lejos.robotics.objectdetection.FeatureDetectorAdapter
-	c36:p -> c42:p [dir=back,arrowtail=empty];
+	c38:p -> c44:p [dir=back,arrowtail=empty];
 	//lejos.robotics.objectdetection.TouchFeatureDetector extends lejos.robotics.objectdetection.FeatureDetectorAdapter
-	c36:p -> c43:p [dir=back,arrowtail=empty];
+	c38:p -> c45:p [dir=back,arrowtail=empty];
 	//lejos.robotics.pathfinding.AstarSearchAlgorithm implements lejos.robotics.pathfinding.SearchAlgorithm
-	c56:p -> c44:p [dir=back,arrowtail=empty,style=dashed];
+	c58:p -> c46:p [dir=back,arrowtail=empty,style=dashed];
 	//lejos.robotics.pathfinding.DijkstraPathFinder implements lejos.robotics.pathfinding.PathFinder
-	c53:p -> c45:p [dir=back,arrowtail=empty,style=dashed];
+	c55:p -> c47:p [dir=back,arrowtail=empty,style=dashed];
 	//lejos.robotics.pathfinding.FourWayGridMesh implements lejos.robotics.pathfinding.NavigationMesh
-	c49:p -> c47:p [dir=back,arrowtail=empty,style=dashed];
+	c51:p -> c49:p [dir=back,arrowtail=empty,style=dashed];
 	//lejos.robotics.pathfinding.GridNode extends lejos.robotics.pathfinding.Node
-	c50:p -> c48:p [dir=back,arrowtail=empty];
+	c52:p -> c50:p [dir=back,arrowtail=empty];
 	//lejos.robotics.pathfinding.NodePathFinder implements lejos.robotics.pathfinding.PathFinder
-	c53:p -> c51:p [dir=back,arrowtail=empty,style=dashed];
+	c55:p -> c53:p [dir=back,arrowtail=empty,style=dashed];
 	//lejos.robotics.pathfinding.Path extends java.util.ArrayList<lejos.robotics.navigation.Waypoint>
-	c62:p -> c52:p [dir=back,arrowtail=empty];
+	c64:p -> c54:p [dir=back,arrowtail=empty];
 	//lejos.robotics.pathfinding.RandomPathFinder implements lejos.robotics.pathfinding.PathFinder
-	c53:p -> c54:p [dir=back,arrowtail=empty,style=dashed];
+	c55:p -> c56:p [dir=back,arrowtail=empty,style=dashed];
 	//lejos.robotics.pathfinding.RandomSelfGeneratingNode extends lejos.robotics.pathfinding.Node
-	c50:p -> c55:p [dir=back,arrowtail=empty];
+	c52:p -> c57:p [dir=back,arrowtail=empty];
 	//lejos.robotics.pathfinding.ShortestPathFinder implements lejos.robotics.pathfinding.PathFinder
-	c53:p -> c57:p [dir=back,arrowtail=empty,style=dashed];
+	c55:p -> c59:p [dir=back,arrowtail=empty,style=dashed];
 	// java.lang.Thread
-	c59 [label=<<table title="java.lang.Thread" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/java/lang/Thread.html">
+	c61 [label=<<table title="java.lang.Thread" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/java/lang/Thread.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Thread </td></tr>
 		</table></td></tr>
@@ -1558,7 +1612,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="http://java.sun.com/j2se/1.4.2/docs/api/java/lang/Thread.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// java.lang.Exception
-	c60 [label=<<table title="java.lang.Exception" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/java/lang/Exception.html">
+	c62 [label=<<table title="java.lang.Exception" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/java/lang/Exception.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Exception </td></tr>
 		</table></td></tr>
@@ -1574,7 +1628,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="http://java.sun.com/j2se/1.4.2/docs/api/java/lang/Exception.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// java.util.ArrayList<E>
-	c62 [label=<<table title="java.util.ArrayList" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/java/util/ArrayList.html">
+	c64 [label=<<table title="java.util.ArrayList" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/java/util/ArrayList.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ArrayList&lt;E&gt; </td></tr>
 		</table></td></tr>
@@ -1645,7 +1699,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="http://java.sun.com/j2se/1.4.2/docs/api/java/util/ArrayList.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// Point
-	c61[label=<<table title="Point" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api//Point.html">
+	c63[label=<<table title="Point" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api//Point.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Point </td></tr>
 		</table></td></tr>
