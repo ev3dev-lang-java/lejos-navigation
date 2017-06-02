@@ -6,7 +6,10 @@ import ev3dev.sensors.ev3.EV3TouchSensor;
 import lejos.hardware.port.SensorPort;
 import lejos.robotics.Touch;
 import lejos.robotics.navigation.DifferentialPilot;
-import lejos.robotics.objectdetection.*;
+import lejos.robotics.objectdetection.Feature;
+import lejos.robotics.objectdetection.FeatureDetector;
+import lejos.robotics.objectdetection.FeatureListener;
+import lejos.robotics.objectdetection.TouchFeatureDetector;
 
 import java.io.IOException;
 

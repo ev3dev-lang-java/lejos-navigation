@@ -1,10 +1,13 @@
 package lejos.robotics.mapping;
 
-import java.io.*;
-import java.util.ArrayList;
-
 import lejos.robotics.geometry.Line;
 import lejos.robotics.geometry.Rectangle;
+
+import java.io.DataInputStream;
+import java.io.EOFException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
 
 
 /**

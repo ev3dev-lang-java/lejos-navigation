@@ -1,11 +1,12 @@
 package lejos.robotics.mapping;
 
-import java.io.*;
-
 import lejos.robotics.Transmittable;
-import lejos.robotics.geometry.*;
-import lejos.robotics.mapping.RangeMap;
+import lejos.robotics.geometry.Line;
+import lejos.robotics.geometry.Point;
+import lejos.robotics.geometry.Rectangle;
 import lejos.robotics.navigation.Pose;
+
+import java.io.*;
 
 
 /**

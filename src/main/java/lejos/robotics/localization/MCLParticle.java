@@ -1,11 +1,12 @@
 package lejos.robotics.localization;
 
-import java.util.Random;
-import lejos.robotics.*;
-import lejos.robotics.geometry.*;
+import lejos.robotics.RangeReadings;
+import lejos.robotics.geometry.Point;
 import lejos.robotics.mapping.RangeMap;
 import lejos.robotics.navigation.Move;
 import lejos.robotics.navigation.Pose;
+
+import java.util.Random;
 
 /**
  * Represents a particle for the particle filtering algorithm. The state of the

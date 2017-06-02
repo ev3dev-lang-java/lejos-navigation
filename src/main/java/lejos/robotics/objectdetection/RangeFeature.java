@@ -7,13 +7,14 @@ package lejos.robotics.objectdetection;
  * from the RangeReading objects.
  */
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
 import lejos.robotics.RangeReading;
 import lejos.robotics.RangeReadings;
 import lejos.robotics.Transmittable;
 import lejos.robotics.navigation.Pose;
+
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
 
 /**
  * <p>This class is a basic data container for information retrieved about an object detected by

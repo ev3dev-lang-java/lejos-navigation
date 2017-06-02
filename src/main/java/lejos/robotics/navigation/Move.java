@@ -1,10 +1,10 @@
 package lejos.robotics.navigation;
 
+import lejos.robotics.Transmittable;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
-
-import lejos.robotics.Transmittable;
 
 /**
  * Models a movement performed by a pilot

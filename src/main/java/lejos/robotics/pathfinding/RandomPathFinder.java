@@ -1,9 +1,5 @@
 package lejos.robotics.pathfinding;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
-
 import lejos.robotics.RangeReading;
 import lejos.robotics.RangeReadings;
 import lejos.robotics.geometry.Point;
@@ -13,6 +9,10 @@ import lejos.robotics.navigation.DestinationUnreachableException;
 import lejos.robotics.navigation.Pose;
 import lejos.robotics.navigation.Waypoint;
 import lejos.robotics.navigation.WaypointListener;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
 
 /**
  * PathFinder that takes a map and a dummy set of range readings.

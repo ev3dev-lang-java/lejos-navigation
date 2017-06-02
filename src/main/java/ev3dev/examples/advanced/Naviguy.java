@@ -1,6 +1,6 @@
 package ev3dev.examples.advanced;
 
-import ev3dev.examples.pilot.PilotConfiguration;
+import ev3dev.examples.pilot.PilotConfig2;
 import lejos.robotics.geometry.Line;
 import lejos.robotics.geometry.Rectangle;
 import lejos.robotics.localization.OdometryPoseProvider;
@@ -24,7 +24,7 @@ public class Naviguy {
 	PoseProvider posi;
 	Navigator n;
 
-	public Naviguy(PilotConfiguration p) {
+	public Naviguy(PilotConfig2 p) {
 		posi = new OdometryPoseProvider(p.getPilot());
 		/// set position
 		pose = new Pose(0, 0, 90);

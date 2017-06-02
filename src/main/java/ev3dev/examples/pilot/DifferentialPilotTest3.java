@@ -4,7 +4,6 @@ import ev3dev.actuators.ev3.motors.EV3LargeRegulatedMotor;
 import ev3dev.sensors.Battery;
 import lejos.hardware.port.MotorPort;
 import lejos.robotics.RegulatedMotor;
-import lejos.robotics.localization.OdometryPoseProvider;
 import lejos.robotics.navigation.DifferentialPilot;
 import lombok.extern.slf4j.Slf4j;
 

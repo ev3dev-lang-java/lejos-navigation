@@ -4,11 +4,11 @@ import ev3dev.actuators.ev3.motors.Motor;
 import lejos.robotics.RegulatedMotor;
 import lejos.robotics.navigation.DifferentialPilot;
 
-public class PilotConfiguration {
+public class PilotConfig2 {
 
 	DifferentialPilot pilot = null;
 
-	public PilotConfiguration() {
+	public PilotConfig2() {
 
 		final double wheelDiameter = 8.2;
 		final double trackWidth = 12.6;

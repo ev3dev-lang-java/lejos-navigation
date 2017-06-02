@@ -1,11 +1,12 @@
 package lejos.robotics.pathfinding;
 
+import lejos.robotics.Transmittable;
+import lejos.robotics.navigation.Waypoint;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
-import lejos.robotics.Transmittable;
-import lejos.robotics.navigation.Waypoint;
 
 /**
  * Represents a path consisting of an ordered collection of waypoints

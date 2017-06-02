@@ -1,7 +1,10 @@
 package lejos.robotics.pathfinding;
 
-import java.util.*;
 import lejos.robotics.navigation.Waypoint;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
 
 // TODO: This works, but this code keeps the Node properties right in the Node object. The same Node set
 // (aka Navigation Mesh) might conceivably (probably) be used repeatedly for many different searches. So things

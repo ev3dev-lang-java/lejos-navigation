@@ -3,9 +3,7 @@ package ev3dev.examples.advanced;
 import ev3dev.actuators.Sound;
 import ev3dev.actuators.ev3.motors.NXTRegulatedMotor;
 import ev3dev.sensors.Button;
-import ev3dev.sensors.ev3.EV3TouchSensor;
 import lejos.hardware.port.MotorPort;
-import lejos.hardware.port.SensorPort;
 import lejos.robotics.geometry.Line;
 import lejos.robotics.geometry.Point;
 import lejos.robotics.geometry.Rectangle;
@@ -18,7 +16,6 @@ import lejos.robotics.navigation.Waypoint;
 import lejos.robotics.objectdetection.Feature;
 import lejos.robotics.objectdetection.FeatureDetector;
 import lejos.robotics.objectdetection.FeatureListener;
-import lejos.robotics.objectdetection.TouchFeatureDetector;
 import lejos.robotics.pathfinding.Path;
 import lejos.robotics.pathfinding.ShortestPathFinder;
 

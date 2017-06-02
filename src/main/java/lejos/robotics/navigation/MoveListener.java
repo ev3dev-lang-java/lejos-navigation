@@ -1,7 +1,5 @@
 package lejos.robotics.navigation;
 
-import lejos.robotics.navigation.Move;
-
 /**
  * <p>Any class that wants to be updated automatically by a MoveProvider should
  * implement this interface. Both movementStarted() and movementStopped() also return 

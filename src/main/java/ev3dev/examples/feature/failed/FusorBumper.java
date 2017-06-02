@@ -1,7 +1,5 @@
 package ev3dev.examples.feature.failed;
 
-import java.io.IOException;
-
 import ev3dev.examples.pilot.PilotConfig;
 import ev3dev.sensors.Battery;
 import ev3dev.sensors.Button;
@@ -11,12 +9,9 @@ import lejos.hardware.port.SensorPort;
 import lejos.robotics.RangeFinderAdapter;
 import lejos.robotics.Touch;
 import lejos.robotics.navigation.DifferentialPilot;
-import lejos.robotics.objectdetection.Feature;
-import lejos.robotics.objectdetection.FeatureDetector;
-import lejos.robotics.objectdetection.FeatureListener;
-import lejos.robotics.objectdetection.FusorDetector;
-import lejos.robotics.objectdetection.RangeFeatureDetector;
-import lejos.robotics.objectdetection.TouchFeatureDetector;
+import lejos.robotics.objectdetection.*;
+
+import java.io.IOException;
 
 /**
  * This bumper-car example uses a FusorDetector to detect and report objects from multiple sensors. Use 

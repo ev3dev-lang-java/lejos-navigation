@@ -1,15 +1,14 @@
 package lejos.robotics.mapping;
 
-import java.io.InputStream;
-import java.util.ArrayList;
+import lejos.robotics.geometry.Line;
+import lejos.robotics.geometry.Rectangle;
 
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamConstants;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
-
-import lejos.robotics.geometry.Line;
-import lejos.robotics.geometry.Rectangle;
+import java.io.InputStream;
+import java.util.ArrayList;
 
 /**
  * <p>This class loads map data from an SVG and produces a LineMap object, which can

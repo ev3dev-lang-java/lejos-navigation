@@ -1,10 +1,10 @@
 package lejos.robotics.pathfinding;
 
 
+import lejos.robotics.geometry.Point2D;
+
 import java.util.ArrayList;
 import java.util.Collection;
-
-import lejos.robotics.geometry.Point2D;
 
 /**
  * This class represents a Node which can be connected to other neighboring nodes. Node sets can be searched using

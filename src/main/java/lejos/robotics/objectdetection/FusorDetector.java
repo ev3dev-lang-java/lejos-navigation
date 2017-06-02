@@ -1,9 +1,9 @@
 package lejos.robotics.objectdetection;
 
-import java.util.ArrayList;
-
 import lejos.robotics.RangeReading;
 import lejos.robotics.RangeReadings;
+
+import java.util.ArrayList;
 
 /**
  * <p>If you have a robot with multiple sensors (touch and range) and would like them to report to one

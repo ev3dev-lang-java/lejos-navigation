@@ -1,9 +1,10 @@
 package lejos.robotics.objectdetection;
 
-import java.util.ArrayList;
 import lejos.robotics.RangeReading;
 import lejos.robotics.Touch;
 import lejos.robotics.geometry.Point;
+
+import java.util.ArrayList;
 
 /**
  * This class allows a touch sensor to be used as a defacto range sensor by reporting the position of the touch sensor

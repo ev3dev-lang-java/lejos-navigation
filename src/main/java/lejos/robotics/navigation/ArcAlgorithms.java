@@ -1,8 +1,8 @@
 package lejos.robotics.navigation; // TODO: Move to lejos.geom?
 
 
-
-import lejos.robotics.geometry.*;
+import lejos.robotics.geometry.Point;
+import lejos.robotics.geometry.Point2D;
 
 /**
  * The static methods in this class can be used to to calculate theoretical routes and for displaying graphical representations of

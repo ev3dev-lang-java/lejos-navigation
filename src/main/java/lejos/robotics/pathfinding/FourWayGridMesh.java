@@ -1,11 +1,11 @@
 package lejos.robotics.pathfinding;
 
-import java.util.ArrayList;
-import java.util.Collection;
-
 import lejos.robotics.geometry.Line;
 import lejos.robotics.geometry.Rectangle;
 import lejos.robotics.mapping.LineMap;
+
+import java.util.ArrayList;
+import java.util.Collection;
 
 /**
  * Generates a grid of nodes. Spacing between the grid nodes and clearance around map geometry can be specified. 

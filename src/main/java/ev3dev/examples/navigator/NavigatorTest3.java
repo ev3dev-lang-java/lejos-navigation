@@ -1,14 +1,16 @@
-package ev3dev.examples.pilot;
+package ev3dev.examples.navigator;
 
+import ev3dev.examples.pilot.PilotConfig;
 import ev3dev.sensors.Battery;
 import lejos.robotics.localization.OdometryPoseProvider;
 import lejos.robotics.navigation.DifferentialPilot;
 import lejos.robotics.navigation.Navigator;
-import lombok.extern.slf4j.Slf4j;
+import lejos.robotics.navigation.Waypoint;
+import lejos.robotics.pathfinding.Path;
 
 import java.io.IOException;
 
-public @Slf4j class DifferentialPilotTest5 {
+public class NavigatorTest3 {
 
     public static void main(final String[] args) throws IOException {
 
@@ -18,16 +20,18 @@ public @Slf4j class DifferentialPilotTest5 {
         OdometryPoseProvider pp = new OdometryPoseProvider(pilot);
         Navigator navigator = new Navigator(pilot, pp);
 
-        navigator.singleStep(true);
-
-        navigator.addWaypoint(0.0f, 40.0f, 0.0f);
-        //navigator.addWaypoint(0.0f, 80.0f);
-        //navigator.addWaypoint(-80.0f, 00.0f, 90.0f);
-
+        Path path = new Path();
+        path.add(new Waypoint(0,0));
+        path.add(new Waypoint(100,0));
+        path.add(new Waypoint(50,50));
+        path.add(new Waypoint(100,-50));
+        path.add(new Waypoint(0,0));
+        navigator.setPath(path);
         navigator.followPath();
         navigator.waitForStop();
 
-        log.info("Voltage: {}", Battery.getInstance().getVoltage());
-
+        System.out.println(navigator.getPoseProvider().getPose());
+        System.out.println("Voltage: " + Battery.getInstance().getVoltage());
     }
+
 }

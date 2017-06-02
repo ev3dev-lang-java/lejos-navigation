@@ -1,9 +1,12 @@
 package lejos.robotics.pathfinding;
 
+import lejos.robotics.navigation.DestinationUnreachableException;
+import lejos.robotics.navigation.Pose;
+import lejos.robotics.navigation.Waypoint;
+import lejos.robotics.navigation.WaypointListener;
+
 import java.util.ArrayList;
 import java.util.Iterator;
-
-import lejos.robotics.navigation.*;
 
 /**
  * This path finder class uses one of the common search algorithms (e.g. A*) and a navigation mesh (e.g. grid) and

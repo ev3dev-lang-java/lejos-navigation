@@ -1,9 +1,9 @@
 package lejos.robotics.pathfinding;
 
 
-import java.util.Collection;
-
 import lejos.robotics.geometry.Point2D;
+
+import java.util.Collection;
 
 /**
  * This Node is able to randomly generate its own neighbors via the getNeighbors() method. The number of neighbors 

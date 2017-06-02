@@ -1,10 +1,10 @@
 package lejos.robotics.navigation;
 
-import java.util.ArrayList;
-
 import lejos.robotics.localization.OdometryPoseProvider;
 import lejos.robotics.localization.PoseProvider;
 import lejos.robotics.pathfinding.Path;
+
+import java.util.ArrayList;
 
 /**
  * This class controls a robot to traverse a Path,  a sequence of  {@link  Waypoint}s.

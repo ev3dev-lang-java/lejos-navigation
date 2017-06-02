@@ -1,11 +1,13 @@
 package lejos.robotics.localization;
 
+import lejos.robotics.navigation.Move;
+import lejos.robotics.navigation.MoveListener;
+import lejos.robotics.navigation.MoveProvider;
+import lejos.robotics.navigation.Pose;
+
 import java.util.ArrayList;
 
 //import lejos.hardware.Sound;
-import lejos.robotics.localization.OdometryPoseProvider;
-import lejos.robotics.localization.PoseProvider;
-import lejos.robotics.navigation.*;
 
 /**
  * <p>A PoseProvider that uses beacon triangulation to pinpoint the pose (x, y, heading) of a robot. 

@@ -1,11 +1,11 @@
 package lejos.robotics.navigation;
 
+import lejos.robotics.Transmittable;
+import lejos.robotics.geometry.Point;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
-
-import lejos.robotics.Transmittable;
-import lejos.robotics.geometry.Point;
 
 /**
  * A sequence of way points make up a route that a robot can navigate.

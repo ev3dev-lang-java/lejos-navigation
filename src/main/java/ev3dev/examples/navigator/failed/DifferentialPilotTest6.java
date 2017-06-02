@@ -1,5 +1,6 @@
-package ev3dev.examples.pilot;
+package ev3dev.examples.navigator.failed;
 
+import ev3dev.examples.pilot.PilotConfig;
 import ev3dev.sensors.Battery;
 import lejos.robotics.localization.OdometryPoseProvider;
 import lejos.robotics.navigation.DifferentialPilot;
@@ -22,7 +23,6 @@ public @Slf4j class DifferentialPilotTest6 {
         pp = new OdometryPoseProvider(pilot);
         navigator = new Navigator(pilot, pp);
 
-        // Não é necessário
         for (int i = 0; i < 2; i++) {
             Move (50.0f, 0.0f);
             Move (50.0f, 50.0f);
@@ -38,9 +38,7 @@ public @Slf4j class DifferentialPilotTest6 {
 
     private static void Move (float x, float y) {
         navigator.goTo(x, y);
-        // navigator.goTo(x, y, ang);
         while (navigator.isMoving()) {
-            //Mostra a Pose
             System.out.println(pp.getPose());
         }
     }

@@ -1,12 +1,15 @@
 package lejos.robotics.pathfinding;
 
-import lejos.robotics.geometry.*;
+import lejos.robotics.geometry.Line;
+import lejos.robotics.geometry.Point;
 import lejos.robotics.mapping.LineMap;
 import lejos.robotics.navigation.DestinationUnreachableException;
+import lejos.robotics.navigation.Pose;
 import lejos.robotics.navigation.Waypoint;
 import lejos.robotics.navigation.WaypointListener;
-import java.util.*;
-import lejos.robotics.navigation.Pose;
+
+import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
 * This class calculates the shortest path from a starting point to a finish

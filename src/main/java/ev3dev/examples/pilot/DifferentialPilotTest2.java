@@ -2,7 +2,6 @@ package ev3dev.examples.pilot;
 
 import ev3dev.actuators.ev3.motors.EV3LargeRegulatedMotor;
 import ev3dev.sensors.Battery;
-import ev3dev.sensors.Button;
 import lejos.hardware.port.MotorPort;
 import lejos.robotics.RegulatedMotor;
 import lejos.robotics.localization.OdometryPoseProvider;
