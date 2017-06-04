@@ -101,11 +101,11 @@ public class FeatureAvoider2 {
 }
 ```
 
-#UML Diagram
+## UML Diagram
 
 ![](https://github.com/ev3dev-lang-java/lejos-navigation/raw/develop/docs/uml/graph.png)
 
-#Open issues
+## Open issues
 
 - Chassis package is not included (Speak with Aswin & Andy)
 - DifferentialPilot: (I have doubts with methods with arcs)
