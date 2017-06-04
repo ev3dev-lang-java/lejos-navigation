@@ -109,4 +109,4 @@ public class FeatureAvoider2 {
 
 - Chassis package is not included (Speak with Aswin & Andy)
 - DifferentialPilot: (I have doubts with methods with arcs)
-- Fusor detector (Possible concurrency problme)
+- Fusor detector (Possible concurrency problems)
