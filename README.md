@@ -2,13 +2,39 @@
 
 This library represent the local navigation stack from LeJOS project.
 
-What packages include?
+## What packages include?
+
+The packages included in this library are:
 
 - lejos.robotics.localization
 - lejos.robotics.mapping
 - lejos.robotics.navigation
 - lejos.robotics.objectdetection
 - lejos.robotics.pathfinding
+
+## Getting Started
+
+To start a new project with this library, add the following repository and dependency.
+
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+```
+
+``` xml
+<dependency>
+    <groupId>com.github.ev3dev-lang-java</groupId>
+    <artifactId>lejos-navigation</artifactId>
+    <version>v0.1.0</version>
+</dependency>
+```
+	
+Further information about the Maven dependency: 
+https://jitpack.io/#ev3dev-lang-java/lejos-navigation/v0.1.0
 
 Now if you use EV3Dev + EV3Dev-lang-java, it is possible to enjoy with this kind of examples:
 
